@@ -28,4 +28,4 @@ jobs:
       run: |
         OUTPUT=$(python app.py)
         echo "$OUTPUT"
-        echo "$OUTPUT" | grep "Processing" || (echo "Expected output not found!" && exit 1)
+        echo "$OUTPUT" | grep "Found book" || (echo "Expected output not found!" && exit 1)
